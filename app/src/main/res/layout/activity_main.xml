@@ -71,5 +71,12 @@
         android:textColor="#FF5722"
         android:text="Phong đã ở đây"/>
 
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!\nĐây là nhóm 4" />
+
 
 </LinearLayout>
