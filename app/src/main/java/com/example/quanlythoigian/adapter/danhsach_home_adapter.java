@@ -25,7 +25,6 @@ public class danhsach_home_adapter extends RecyclerView.Adapter<danhsach_home_ad
         this.list = list;
     }
 
-
     @NonNull
     @Override
     public viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
