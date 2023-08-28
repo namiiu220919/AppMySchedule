@@ -69,7 +69,6 @@
         android:textStyle="bold"
         android:textColor="#FF5722"
         android:text="Phong đã ở đây"/>
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
