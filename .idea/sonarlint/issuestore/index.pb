@@ -19,8 +19,6 @@ Q.idea/sonarlint/securityhotspotstore/8/c/8c55c3ccc257e5907959013f99656e4c8ec390
 Q.idea/sonarlint/securityhotspotstore/f/0/f07866736216be0ee2aba49e392191aeae700a35,2\5\25f6469773b9f3ebb994178c1114a60412389f58
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
-n
->app/src/main/java/com/example/quanlythoigian/MainActivity.java,4\1\417a7a1bc6fb32a2ec1f808b3ae9d635802b902e
 q
 Aapp/src/main/java/com/example/quanlythoigian/lichNgayAdapter.java,5\5\55ceffbf7d91fd4e830e3202f7c4ca8777215b20
 j
