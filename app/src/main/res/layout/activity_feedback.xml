@@ -33,19 +33,19 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:id="@+id/bottomnav1"
-                    android:layout_marginTop="600dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#3F51B5"
-                    app:itemIconTint="#2196F3"
-                    app:itemTextColor="@color/white"
-                    app:labelVisibilityMode="selected"
-                    app:menu="@menu/nav"/>
+                android:layout_height="match_parent" />
 
-            </FrameLayout>
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomnav"
+                android:layout_marginTop="600dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3F51B5"
+                app:itemIconTint="#2196F3"
+                app:itemTextColor="@color/white"
+                app:labelVisibilityMode="selected"
+                app:menu="@menu/nav"/>
+
 
 
 
