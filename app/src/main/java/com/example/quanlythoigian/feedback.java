@@ -26,7 +26,7 @@ public class feedback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
 
-        bottomnav = findViewById(R.id.bottomnav);
+        bottomnav = findViewById(R.id.bottomnav1);
 
         bottomnav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
