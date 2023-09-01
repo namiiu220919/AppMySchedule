@@ -26,27 +26,27 @@ public class feedback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
 
-        bottomnav = findViewById(R.id.bottomnav);
+        bottomnav = findViewById(R.id.bottomnav1);
 
         bottomnav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if(item.getItemId()== R.id.home){
-                    frghome frghome = new frghome();
-                    repalceFrg(frghome);
-                }
-                else if(item.getItemId()==R.id.chat){
-                    frgchat frgchat = new frgchat();
-                    repalceFrg(frgchat);
-                }
-                else if(item.getItemId()==R.id.group){
-                    frggroup frggroup = new frggroup();
-                    repalceFrg(frggroup);
-                }
-                else if(item.getItemId()==R.id.person){
-                    frgperson frgperson = new frgperson();
-                    repalceFrg(frgperson);
-                }
+//                if(item.getItemId()== R.id.home){
+//                    frghome frghome = new frghome();
+//                    repalceFrg(frghome);
+//                }
+//                else if(item.getItemId()==R.id.chat){
+//                    frgchat frgchat = new frgchat();
+//                    repalceFrg(frgchat);
+//                }
+//                else if(item.getItemId()==R.id.group){
+//                    frggroup frggroup = new frggroup();
+//                    repalceFrg(frggroup);
+//                }
+//                else if(item.getItemId()==R.id.person){
+//                    frgperson frgperson = new frgperson();
+//                    repalceFrg(frgperson);
+//                }
                 return true;
             }
         });
@@ -54,6 +54,6 @@ public class feedback extends AppCompatActivity {
     }
     public void repalceFrg(Fragment frg){
         FragmentManager fm = getSupportFragmentManager();
-        fm.beginTransaction().replace(R.id.frmfeedback,frg).commit();
+        fm.beginTransaction().replace(R.id.frmnav,frg).commit();
     }
 }
