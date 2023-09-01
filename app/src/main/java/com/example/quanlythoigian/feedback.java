@@ -12,7 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 import fragment.frgchat;
-import fragment.frggroup3;
+import fragment.frggroup;
 import fragment.frghome;
 import fragment.frgperson;
 
@@ -25,14 +25,14 @@ public class feedback extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
-
+//
         bottomnav = findViewById(R.id.bottomnav);
 
         bottomnav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if(item.getItemId()== R.id.home){
-                     frghome frghome = new frghome();
+                    frghome frghome = new frghome();
                     repalceFrg(frghome);
                 }
                 else if(item.getItemId()==R.id.chat){
@@ -40,7 +40,7 @@ public class feedback extends AppCompatActivity {
                     repalceFrg(frgchat);
                 }
                 else if(item.getItemId()==R.id.group){
-                    frggroup3 frggroup = new frggroup3();
+                    frggroup frggroup = new frggroup();
                     repalceFrg(frggroup);
                 }
                 else if(item.getItemId()==R.id.person){
