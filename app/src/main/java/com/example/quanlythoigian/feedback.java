@@ -12,7 +12,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 import fragment.frgchat;
-import fragment.frggroup;
+
+import fragment.frggroup3;
 import fragment.frghome;
 import fragment.frgperson;
 
@@ -40,7 +41,7 @@ public class feedback extends AppCompatActivity {
                     repalceFrg(frgchat);
                 }
                 else if(item.getItemId()==R.id.group){
-                    frggroup frggroup = new frggroup();
+                    frggroup3 frggroup = new frggroup3();
                     repalceFrg(frggroup);
                 }
                 else if(item.getItemId()==R.id.person){
