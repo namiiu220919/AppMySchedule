@@ -8,13 +8,14 @@ import androidx.fragment.app.FragmentManager;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.quanlythoigian.fragment.frgchat;
+import com.example.quanlythoigian.fragment.frghome;
+import com.example.quanlythoigian.fragment.frgperson;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-import fragment.frgchat;
-import fragment.frggroup;
-import fragment.frghome;
-import fragment.frgperson;
+import fragment.frggroup3;
+
 
 public class feedback extends AppCompatActivity {
 
@@ -25,7 +26,7 @@ public class feedback extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
-//
+
         bottomnav = findViewById(R.id.bottomnav);
 
         bottomnav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -40,7 +41,7 @@ public class feedback extends AppCompatActivity {
                     repalceFrg(frgchat);
                 }
                 else if(item.getItemId()==R.id.group){
-                    frggroup frggroup = new frggroup();
+                    frggroup3 frggroup = new frggroup3();
                     repalceFrg(frggroup);
                 }
                 else if(item.getItemId()==R.id.person){

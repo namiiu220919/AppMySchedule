@@ -2,16 +2,17 @@ package com.example.quanlythoigian.model;
 
 public class danhsachthoigian {
 
-private String thu;
-private int ngay;
-private String loichuc;
-private String loinhac;
+    private String thu;
+    private String ngay;
+    private String loichuc;
+    private String loinhac;
 
     public danhsachthoigian() {
-
     }
     //class này bỏ
-    public danhsachthoigian(String thu, int ngay, String loichuc, String loinhac) {
+
+
+    public danhsachthoigian(String thu, String ngay, String loichuc, String loinhac) {
         this.thu = thu;
         this.ngay = ngay;
         this.loichuc = loichuc;
@@ -26,11 +27,11 @@ private String loinhac;
         this.thu = thu;
     }
 
-    public int getNgay() {
+    public String getNgay() {
         return ngay;
     }
 
-    public void setNgay(int ngay) {
+    public void setNgay(String ngay) {
         this.ngay = ngay;
     }
 

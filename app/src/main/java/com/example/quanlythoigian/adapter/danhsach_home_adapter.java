@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.quanlythoigian.R;
+//import com.example.quanlythoigian.dao.dsdao;
+import com.example.quanlythoigian.dao.dsdao;
 import com.example.quanlythoigian.databinding.ItemHomeBinding;
 import com.example.quanlythoigian.model.danhsachthoigian;
 
@@ -19,10 +21,12 @@ public class danhsach_home_adapter extends RecyclerView.Adapter<danhsach_home_ad
     public final Context context;
     private ItemHomeBinding binding;
     public final ArrayList<danhsachthoigian> list;
+    dsdao dsDao;
 
     public danhsach_home_adapter(Context context, ArrayList<danhsachthoigian> list) {
         this.context = context;
         this.list = list;
+//        dsDao = new dsdao(context);
     }
 
     @NonNull
