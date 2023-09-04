@@ -1,4 +1,4 @@
-package com.example.quanlythoigian.fragment;
+package fragment;
 
 import android.os.Bundle;
 

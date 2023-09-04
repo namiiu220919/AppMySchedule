@@ -7,11 +7,12 @@
     android:layout_height="match_parent"
     tools:openDrawer="start"
     tools:context=".feedback">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,38 +25,29 @@
                 android:layout_height="wrap_content"
                 android:minHeight="?attr/actionBarSize"/>
 
-
         </com.google.android.material.appbar.AppBarLayout>
+
         <FrameLayout
             android:id="@+id/frmnav"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottomnav"
-                android:layout_marginTop="600dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#3F51B5"
-                app:itemIconTint="#2196F3"
-                app:itemTextColor="@color/white"
-                app:labelVisibilityMode="selected"
-                app:menu="@menu/nav"/>
-
-
-
+            <!-- Content to be displayed in the FrameLayout -->
 
         </FrameLayout>
 
-
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            app:itemIconTint="#2196F3"
+            app:itemTextColor="@color/white"
+            app:labelVisibilityMode="selected"
+            app:menu="@menu/nav"/>
 
     </LinearLayout>
-
-
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav"
@@ -63,7 +55,6 @@
         android:layout_height="match_parent"
         app:menu="@menu/menungang"
         app:itemIconTint="@color/black"
-
         android:layout_gravity="start"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
